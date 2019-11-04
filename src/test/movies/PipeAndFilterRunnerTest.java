@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 import static org.hamcrest.CoreMatchers.hasItems;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -27,5 +28,10 @@ public class PipeAndFilterRunnerTest {
     @Test
     public void canReadInputFile() throws IOException {
         assertThat(g.getFileContents("foobar.txt"), hasItems("foo", "bar"));
+    }
+
+    @Test
+    public void canProcessStopWords() throws IOException {
+        assertThat(g.applyStopWords(Arrays.asList("foo", "bar", "ah")), hasItems("foo", "bar"));
     }
 }
