@@ -3,6 +3,10 @@ package movies;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.IOException;
+
+import static org.hamcrest.CoreMatchers.hasItems;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.assertEquals;
 
 public class PipeAndFilterRunnerTest {
@@ -18,5 +22,10 @@ public class PipeAndFilterRunnerTest {
     public void testCanReturnHardcodedAge()
     {
         assertEquals(g.runPipeAndFilter(),1);
+    }
+
+    @Test
+    public void canReadInputFile() throws IOException {
+        assertThat(g.getFileContents("foobar.txt"), hasItems("foo", "bar"));
     }
 }
