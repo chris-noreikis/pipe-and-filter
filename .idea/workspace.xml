@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="458f12d7-9c01-488f-bc7d-7fb16697f17a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inputs/foobar.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/movies/Stemmer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/textprocessing/movies/PipeAndFilterRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/textprocessing/movies/PipeAndFilterRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/textprocessing/movies/PipeAndFilterRunnerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/textprocessing/movies/PipeAndFilterRunnerTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/movies/PipeAndFilterRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/PipeAndFilterRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/movies/PipeAndFilterRunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/movies/PipeAndFilterRunnerTest.java" afterDir="false" />
     </list>
@@ -16,81 +17,174 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="PipeAndFilterRunner.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/movies/PipeAndFilterRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#87#88#0" expanded="true" />
-                <element signature="e#111#112#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Files.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/nio/file/Files.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="3240" column="31" selection-start-line="3240" selection-start-column="31" selection-end-line="3240" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Collection.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/util/Collection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="579" column="22" selection-start-line="579" selection-start-column="22" selection-end-line="579" selection-end-column="22" />
-              <folding>
-                <element signature="e#26957#26958#0" expanded="true" />
-                <element signature="e#27022#27023#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="foobar.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inputs/foobar.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PipeAndFilterRunnerTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/movies/PipeAndFilterRunnerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#339#340#0" expanded="true" />
-                <element signature="e#381#382#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="textprocessing.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/textprocessing.iml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="PipeAndFilterRunner.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/movies/PipeAndFilterRunner.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="427">
+                  <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#87#88#0" expanded="true" />
+                    <element signature="e#111#112#0" expanded="true" />
+                    <element signature="e#1157#1165#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Stemmer.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/movies/Stemmer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="457">
+                  <caret line="370" column="4" lean-forward="true" selection-start-line="370" selection-start-column="4" selection-end-line="370" selection-end-column="4" />
+                  <folding>
+                    <element signature="e#1438#1590#0" />
+                    <element signature="e#2228#2457#0" />
+                    <element signature="e#2228#2520#0" />
+                    <element signature="e#2526#2612#0" />
+                    <element signature="e#2526#2663#0" />
+                    <element signature="e#2669#2874#0" />
+                    <element signature="e#2669#2924#0" />
+                    <element signature="e#2982#3202#0" />
+                    <element signature="e#3524#4030#0" />
+                    <element signature="e#4097#4227#0" />
+                    <element signature="e#4303#4443#0" />
+                    <element signature="e#4736#4969#0" />
+                    <element signature="e#4975#5215#0" />
+                    <element signature="e#5312#5475#0" />
+                    <element signature="e#5519#5576#0" />
+                    <element signature="e#6060#6738#0" />
+                    <element signature="e#6826#6900#0" />
+                    <element signature="e#7083#8450#0" />
+                    <element signature="e#8537#9040#0" />
+                    <element signature="e#9116#10290#0" />
+                    <element signature="e#10346#10557#0" />
+                    <element signature="e#10989#11328#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="stopwords.txt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/inputs/stopwords.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="196">
+                  <caret line="394" column="5" selection-start-line="394" selection-start-column="5" selection-end-line="394" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Files.java" pinned="false" current-in-tab="false">
+            <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/nio/file/Files.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="499">
+                  <caret line="3240" column="31" selection-start-line="3240" selection-start-column="31" selection-end-line="3240" selection-end-column="31" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Collection.java" pinned="false" current-in-tab="false">
+            <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/util/Collection.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="486">
+                  <caret line="579" column="22" selection-start-line="579" selection-start-column="22" selection-end-line="579" selection-end-column="22" />
+                  <folding>
+                    <element signature="e#26957#26958#0" expanded="true" />
+                    <element signature="e#27022#27023#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="foobar.txt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/inputs/foobar.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="15">
+                  <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PipeAndFilterRunnerTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/movies/PipeAndFilterRunnerTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="431">
+                  <caret line="42" column="46" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#339#340#0" expanded="true" />
+                    <element signature="e#381#382#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Assert.class" pinned="false" current-in-tab="false">
+            <entry file="jar://$PROJECT_DIR$/.idea/lib/junit-4.12.jar!/org/junit/Assert.class">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="175">
+                  <caret line="126" column="23" selection-start-line="126" selection-start-column="23" selection-end-line="126" selection-end-column="23" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/build.gradle">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="textprocessing.iml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.idea/textprocessing.iml">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="Stemmer.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/movies/Stemmer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="296">
+                  <caret line="405" column="39" lean-forward="true" selection-start-line="405" selection-start-column="39" selection-end-line="405" selection-end-column="99" />
+                  <folding>
+                    <element signature="e#1438#1590#0" />
+                    <element signature="e#2228#2457#0" />
+                    <element signature="e#2228#2520#0" />
+                    <element signature="e#2526#2612#0" />
+                    <element signature="e#2526#2663#0" />
+                    <element signature="e#2669#2874#0" />
+                    <element signature="e#2669#2924#0" />
+                    <element signature="e#2982#3202#0" />
+                    <element signature="e#3524#4030#0" />
+                    <element signature="e#4097#4227#0" />
+                    <element signature="e#4303#4443#0" />
+                    <element signature="e#4736#4969#0" />
+                    <element signature="e#4975#5215#0" />
+                    <element signature="e#5312#5475#0" />
+                    <element signature="e#5519#5576#0" />
+                    <element signature="e#6060#6738#0" />
+                    <element signature="e#6826#6900#0" />
+                    <element signature="e#7083#8450#0" />
+                    <element signature="e#8537#9040#0" />
+                    <element signature="e#9116#10290#0" />
+                    <element signature="e#10346#10557#0" />
+                    <element signature="e#10989#11328#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -102,6 +196,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>sourcepath</find>
+      <find>bar</find>
+      <find>stemmer</find>
+      <find>assertArrayEquals</find>
+      <find>assertListE</find>
+      <find>stem()</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -123,8 +222,9 @@
         <option value="$PROJECT_DIR$/src/main/java/movies/MovieRecommendationService.java" />
         <option value="$PROJECT_DIR$/src/test/movies/HardcodedUserServiceTest.java" />
         <option value="$PROJECT_DIR$/inputs/foobar.txt" />
-        <option value="$PROJECT_DIR$/src/main/movies/PipeAndFilterRunner.java" />
         <option value="$PROJECT_DIR$/src/test/movies/PipeAndFilterRunnerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/movies/Stemmer.java" />
+        <option value="$PROJECT_DIR$/src/main/movies/PipeAndFilterRunner.java" />
       </list>
     </option>
   </component>
@@ -137,8 +237,8 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="1379" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1920" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -232,7 +332,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PipeAndFilterRunnerTest">
+  <component name="RunManager" selected="JUnit.PipeAndFilterRunnerTest.canTransformIntoRoot">
+    <configuration name="Stemmer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="movies.Stemmer" />
+      <module name="textprocessing" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="movies.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -273,6 +384,52 @@
       <option name="MAIN_CLASS_NAME" value="movies.PipeAndFilterRunnerTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="PipeAndFilterRunnerTest.canProcessStopWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="textprocessing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="movies.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="movies" />
+      <option name="MAIN_CLASS_NAME" value="movies.PipeAndFilterRunnerTest" />
+      <option name="METHOD_NAME" value="canProcessStopWords" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="PipeAndFilterRunnerTest.canTransformIntoRoot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="textprocessing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="movies.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="movies" />
+      <option name="MAIN_CLASS_NAME" value="movies.PipeAndFilterRunnerTest" />
+      <option name="METHOD_NAME" value="canTransformIntoRoot" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -323,9 +480,15 @@
     <list>
       <item itemvalue="JUnit.HardcodedUserServiceTest" />
       <item itemvalue="JUnit.PipeAndFilterRunnerTest" />
+      <item itemvalue="JUnit.PipeAndFilterRunnerTest.canProcessStopWords" />
+      <item itemvalue="JUnit.PipeAndFilterRunnerTest.canTransformIntoRoot" />
+      <item itemvalue="Application.Stemmer" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PipeAndFilterRunnerTest.canTransformIntoRoot" />
+        <item itemvalue="Application.Stemmer" />
+        <item itemvalue="JUnit.PipeAndFilterRunnerTest.canProcessStopWords" />
         <item itemvalue="JUnit.PipeAndFilterRunnerTest" />
         <item itemvalue="JUnit.HardcodedUserServiceTest" />
       </list>
@@ -348,35 +511,62 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572827125559</updated>
-      <workItem from="1572827127063" duration="2554000" />
+      <workItem from="1572827127063" duration="5119000" />
     </task>
+    <task id="LOCAL-00001" summary="Add  input  files  and code to read  them">
+      <created>1572834787028</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1572834787028</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Stopwords  filter">
+      <created>1572892169748</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572892169748</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HardcodedUserServiceTest - 2019.11.03 at 18h 34m 37s.xml">
-      <configuration name="HardcodedUserServiceTest" configurationId="JUnit" />
+    <history-entry file="PipeAndFilterRunnerTest_canProcessStopWords - 2019.11.04 at 12h 29m 19s.xml">
+      <configuration name="PipeAndFilterRunnerTest.canProcessStopWords" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HardcodedUserServiceTest - 2019.11.03 at 18h 37m 06s.xml">
-      <configuration name="HardcodedUserServiceTest" configurationId="JUnit" />
+    <history-entry file="PipeAndFilterRunnerTest_canTransformIntoRoot - 2019.11.04 at 12h 41m 33s.xml">
+      <configuration name="PipeAndFilterRunnerTest.canTransformIntoRoot" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PipeAndFilterRunnerTest - 2019.11.03 at 18h 37m 16s.xml">
-      <configuration name="PipeAndFilterRunnerTest" configurationId="JUnit" />
+    <history-entry file="PipeAndFilterRunnerTest_canTransformIntoRoot - 2019.11.04 at 12h 42m 05s.xml">
+      <configuration name="PipeAndFilterRunnerTest.canTransformIntoRoot" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PipeAndFilterRunnerTest - 2019.11.03 at 18h 37m 29s.xml">
-      <configuration name="PipeAndFilterRunnerTest" configurationId="JUnit" />
+    <history-entry file="PipeAndFilterRunnerTest_canTransformIntoRoot - 2019.11.04 at 18h 26m 56s.xml">
+      <configuration name="PipeAndFilterRunnerTest.canTransformIntoRoot" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PipeAndFilterRunnerTest - 2019.11.03 at 20h 17m 06s.xml">
-      <configuration name="PipeAndFilterRunnerTest" configurationId="JUnit" />
+    <history-entry file="PipeAndFilterRunnerTest_canTransformIntoRoot - 2019.11.04 at 18h 27m 18s.xml">
+      <configuration name="PipeAndFilterRunnerTest.canTransformIntoRoot" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PipeAndFilterRunnerTest - 2019.11.03 at 20h 29m 03s.xml">
-      <configuration name="PipeAndFilterRunnerTest" configurationId="JUnit" />
+    <history-entry file="PipeAndFilterRunnerTest_canTransformIntoRoot - 2019.11.04 at 18h 27m 30s.xml">
+      <configuration name="PipeAndFilterRunnerTest.canTransformIntoRoot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PipeAndFilterRunnerTest_canTransformIntoRoot - 2019.11.04 at 18h 27m 48s.xml">
+      <configuration name="PipeAndFilterRunnerTest.canTransformIntoRoot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PipeAndFilterRunnerTest_canTransformIntoRoot - 2019.11.04 at 18h 28m 16s.xml">
+      <configuration name="PipeAndFilterRunnerTest.canTransformIntoRoot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PipeAndFilterRunnerTest_canTransformIntoRoot - 2019.11.04 at 18h 29m 13s.xml">
+      <configuration name="PipeAndFilterRunnerTest.canTransformIntoRoot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PipeAndFilterRunnerTest_canTransformIntoRoot - 2019.11.04 at 18h 29m 27s.xml">
+      <configuration name="PipeAndFilterRunnerTest.canTransformIntoRoot" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2554000" />
+    <option name="totallyTimeSpent" value="5119000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
@@ -392,14 +582,14 @@
       <window_info id="UI Designer" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" weight="0.32923076" />
+      <window_info anchor="bottom" id="Messages" weight="0.32843652" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3220513" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31943032" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" weight="0.32948583" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.21778488" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Gradle" />
@@ -417,6 +607,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add  input  files  and code to read  them" />
+    <MESSAGE value="Stopwords  filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stopwords  filter" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/textprocessing.iml">
@@ -504,26 +699,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/movies/PipeAndFilterRunner.java">
+    <entry file="file://$PROJECT_DIR$/inputs/stopwords.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#87#88#0" expanded="true" />
-            <element signature="e#111#112#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="196">
+          <caret line="394" column="5" selection-start-line="394" selection-start-column="5" selection-end-line="394" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/.idea/lib/junit-4.12.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="126" column="23" selection-start-line="126" selection-start-column="23" selection-end-line="126" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/movies/PipeAndFilterRunnerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+        <state relative-caret-position="431">
+          <caret line="42" column="46" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#339#340#0" expanded="true" />
             <element signature="e#381#382#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/movies/Stemmer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="370" column="4" lean-forward="true" selection-start-line="370" selection-start-column="4" selection-end-line="370" selection-end-column="4" />
+          <folding>
+            <element signature="e#1438#1590#0" />
+            <element signature="e#2228#2457#0" />
+            <element signature="e#2228#2520#0" />
+            <element signature="e#2526#2612#0" />
+            <element signature="e#2526#2663#0" />
+            <element signature="e#2669#2874#0" />
+            <element signature="e#2669#2924#0" />
+            <element signature="e#2982#3202#0" />
+            <element signature="e#3524#4030#0" />
+            <element signature="e#4097#4227#0" />
+            <element signature="e#4303#4443#0" />
+            <element signature="e#4736#4969#0" />
+            <element signature="e#4975#5215#0" />
+            <element signature="e#5312#5475#0" />
+            <element signature="e#5519#5576#0" />
+            <element signature="e#6060#6738#0" />
+            <element signature="e#6826#6900#0" />
+            <element signature="e#7083#8450#0" />
+            <element signature="e#8537#9040#0" />
+            <element signature="e#9116#10290#0" />
+            <element signature="e#10346#10557#0" />
+            <element signature="e#10989#11328#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/movies/PipeAndFilterRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#87#88#0" expanded="true" />
+            <element signature="e#111#112#0" expanded="true" />
+            <element signature="e#1157#1165#0" expanded="true" />
           </folding>
         </state>
       </provider>

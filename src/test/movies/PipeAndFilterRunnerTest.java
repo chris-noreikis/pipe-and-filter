@@ -5,9 +5,11 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.List;
 
 import static org.hamcrest.CoreMatchers.hasItems;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
 public class PipeAndFilterRunnerTest {
@@ -33,5 +35,11 @@ public class PipeAndFilterRunnerTest {
     @Test
     public void canProcessStopWords() throws IOException {
         assertThat(g.applyStopWords(Arrays.asList("foo", "bar", "ah")), hasItems("foo", "bar"));
+    }
+
+    @Test
+    public void canTransformIntoRoot() throws IOException {
+        List<String> expected = Arrays.asList("jump");
+        assertArrayEquals(expected.toArray(), g.transformIntoRoot(Arrays.asList("jump",  "jumping", "jumped")).toArray());
     }
 }
