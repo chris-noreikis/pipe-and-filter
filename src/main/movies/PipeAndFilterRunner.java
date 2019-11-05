@@ -12,9 +12,13 @@ public class PipeAndFilterRunner {
         return 1;
     }
 
-    public List<String> getFileContents(String fileName) throws IOException {
-        Path path = FileSystems.getDefault().getPath("/Users/chris/workspace/textprocessing/inputs/foobar.txt");
-        return Files.readAllLines(path);
+    public List<String> getFileContents(String filePath) throws IOException {
+        Path path = FileSystems.getDefault().getPath(filePath);
+        List<String> foo = Files.readAllLines(path).stream().flatMap(e -> {
+            return Arrays.stream(e.replaceAll("[^A-Za-z\\s+]", "").toLowerCase().split("\\s+"));
+        }).filter(e -> e.length() > 0).collect(Collectors.toList());
+        System.out.println(foo);
+        return foo;
     }
 
     public List<String> applyStopWords(List<String> input) throws IOException {
@@ -23,16 +27,8 @@ public class PipeAndFilterRunner {
         return input.stream().filter(e -> !stopwords.contains(e)).collect(Collectors.toList());
     }
 
-    public List<String> removeDupList(List<String> list, boolean ignoreCase) {
-        Set<String> set = (ignoreCase ? new TreeSet<String>(String.CASE_INSENSITIVE_ORDER) : new LinkedHashSet<String>());
-        set.addAll(list);
-
-        List<String> res = new ArrayList<String>(set);
-        return res;
-    }
-
     public List<String> transformIntoRoot(List<String> input) throws IOException {
-        List<String> prelimInput = input
+        return input
                 .stream()
                 .map(e -> {
                     Stemmer s = new Stemmer();
@@ -41,7 +37,6 @@ public class PipeAndFilterRunner {
                     return s.toString();
                 })
                 .collect(Collectors.toList());
-        return prelimInput;
     }
 
     public HashMap<String, Integer> getMostFrequentlyOccurringWordCount(List<String> input) {
@@ -82,5 +77,15 @@ public class PipeAndFilterRunner {
             String string2 = String.format("%20s %20s", e.getWord(), e.getWordCount());
             System.out.println(string2);
         });
+    }
+
+    public void runEverything(String filePath) throws IOException {
+        List<String> fileContents = this.getFileContents(filePath);
+        List<String> filteredStopWords = this.applyStopWords(fileContents);
+        List<String> withDupsRemoved = this.transformIntoRoot(filteredStopWords);
+        HashMap<String, Integer> withCount = this.getMostFrequentlyOccurringWordCount(withDupsRemoved);
+        List<WordCount> mapped = this.mapToWordAndCount(withCount);
+        List<WordCount> sorted = sortAndPrune(mapped);
+        printTable(sorted);
     }
 }

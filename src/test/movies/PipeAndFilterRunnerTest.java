@@ -21,14 +21,8 @@ public class PipeAndFilterRunnerTest {
     }
 
     @Test
-    public void testCanReturnHardcodedAge()
-    {
-        assertEquals(g.runPipeAndFilter(),1);
-    }
-
-    @Test
     public void canReadInputFile() throws IOException {
-        assertThat(g.getFileContents("foobar.txt"), hasItems("foo", "bar"));
+        assertThat(g.getFileContents("/Users/chris/workspace/textprocessing/inputs/foobar.txt"), hasItems("foo", "bar"));
     }
 
     @Test
@@ -111,5 +105,10 @@ public class PipeAndFilterRunnerTest {
         wordsWithCount.add(new WordCount("a", 2));
         wordsWithCount.add(new WordCount("c", 3));
         g.printTable(wordsWithCount);
+    }
+
+    @Test
+    public void canRunIntegrationTestWithoutExplodingLoudly() throws IOException {
+        g.runEverything("/Users/chris/workspace/textprocessing/inputs/usdeclar.txt");
     }
 }
