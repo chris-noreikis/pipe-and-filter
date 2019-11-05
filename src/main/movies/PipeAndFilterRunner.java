@@ -41,7 +41,24 @@ public class PipeAndFilterRunner {
                     return s.toString();
                 })
                 .collect(Collectors.toList());
-        System.out.println(prelimInput);
-        return removeDupList(prelimInput, true);
+        return prelimInput;
+    }
+
+    public HashMap<String, Integer> getMostFrequentlyOccurringWordCount(List<String> input) {
+        HashMap<String, Integer> wordCount = new HashMap<>();
+        input.forEach(word -> {
+            Integer currentCount = wordCount.get(word);
+            if (currentCount == null) {
+                currentCount = 0;
+            }
+
+            currentCount++;
+            wordCount.put(word, currentCount);
+        });
+
+        return wordCount.entrySet().stream()
+                .sorted(Map.Entry.comparingByValue())
+                .limit(10)
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, HashMap::new));
     }
 }
