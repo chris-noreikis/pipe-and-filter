@@ -7,24 +7,6 @@ import java.nio.file.Path;
 import java.util.*;
 import java.util.stream.Collectors;
 
-class WordCount {
-    private int wordCount;
-    private String word;
-
-    WordCount(String word, Integer wordCount) {
-        this.wordCount = wordCount;
-        this.word = word;
-    }
-
-    public String getWord() {
-        return word;
-    }
-
-    public int getWordCount() {
-        return wordCount;
-    }
-}
-
 public class PipeAndFilterRunner {
     public int runPipeAndFilter() {
         return 1;
