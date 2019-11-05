@@ -65,12 +65,51 @@ public class PipeAndFilterRunnerTest {
     }
 
     @Test
+    public void canTransformWordCounts() throws IOException {
+        HashMap<String, Integer> input = new HashMap<>();
+        input.put("hello", 5);
+        int expectedSize = 5;
+        assertEquals(expectedSize, g.mapToWordAndCount(input).get(0).getWordCount());
+    }
+
+    @Test
     public void onlyReturnsTenResultsMax() throws IOException {
-        ArrayList<String> input = new ArrayList<>();
+        List<WordCount> wordsWithCount = new ArrayList<>();
         for (int i = 0; i < 11; i++) {
-            input.add(Integer.toString(i));
+            wordsWithCount.add(new WordCount(Integer.toString(i), i));
         }
         int expectedSize = 10;
-        assertEquals(expectedSize, g.getMostFrequentlyOccurringWordCount(input).size());
+        assertEquals(expectedSize, g.sortAndPrune(wordsWithCount).size());
+    }
+
+    @Test
+    public void primarySortByWordCount() throws IOException {
+        List<WordCount> wordsWithCount = new ArrayList<>();
+        wordsWithCount.add(new WordCount("b", 1));
+        wordsWithCount.add(new WordCount("a", 2));
+        wordsWithCount.add(new WordCount("c", 3));
+        assertEquals("c", g.sortAndPrune(wordsWithCount).get(0).getWord());
+        assertEquals("a", g.sortAndPrune(wordsWithCount).get(1).getWord());
+        assertEquals("b", g.sortAndPrune(wordsWithCount).get(2).getWord());
+    }
+
+    @Test
+    public void secondarySortIsAlphabetical() throws IOException {
+        List<WordCount> wordsWithCount = new ArrayList<>();
+        wordsWithCount.add(new WordCount("b", 1));
+        wordsWithCount.add(new WordCount("a", 1));
+        wordsWithCount.add(new WordCount("c", 1));
+        assertEquals("a", g.sortAndPrune(wordsWithCount).get(0).getWord());
+        assertEquals("b", g.sortAndPrune(wordsWithCount).get(1).getWord());
+        assertEquals("c", g.sortAndPrune(wordsWithCount).get(2).getWord());
+    }
+
+    @Test
+    public void canPrintTableWithoutExplodingLoudly() throws IOException {
+        List<WordCount> wordsWithCount = new ArrayList<>();
+        wordsWithCount.add(new WordCount("b", 1));
+        wordsWithCount.add(new WordCount("a", 2));
+        wordsWithCount.add(new WordCount("c", 3));
+        g.printTable(wordsWithCount);
     }
 }

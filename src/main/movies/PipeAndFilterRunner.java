@@ -7,6 +7,24 @@ import java.nio.file.Path;
 import java.util.*;
 import java.util.stream.Collectors;
 
+class WordCount {
+    private int wordCount;
+    private String word;
+
+    WordCount(String word, Integer wordCount) {
+        this.wordCount = wordCount;
+        this.word = word;
+    }
+
+    public String getWord() {
+        return word;
+    }
+
+    public int getWordCount() {
+        return wordCount;
+    }
+}
+
 public class PipeAndFilterRunner {
     public int runPipeAndFilter() {
         return 1;
@@ -56,9 +74,31 @@ public class PipeAndFilterRunner {
             wordCount.put(word, currentCount);
         });
 
-        return wordCount.entrySet().stream()
-                .sorted(Map.Entry.comparingByValue())
-                .limit(10)
-                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, HashMap::new));
+        return wordCount;
+    }
+
+    public List<WordCount> mapToWordAndCount(HashMap<String, Integer> wordCountsByWord) {
+        return wordCountsByWord.keySet().stream().map(e -> new WordCount(e, wordCountsByWord.get(e))).collect(Collectors.toList());
+    }
+
+    public List<WordCount> sortAndPrune(List<WordCount> wordsWithCount) {
+        return wordsWithCount.stream().sorted((o1, o2) -> {
+            if (o1.getWordCount() != o2.getWordCount()) {
+                return o2.getWordCount() - o1.getWordCount();
+            }
+
+            return o1.getWord().compareTo(o2.getWord());
+        }).limit(10).collect(Collectors.toList());
+    }
+
+    public void printTable(List<WordCount> wordsWithCount) {
+        String string = String.format("%20s %20s", "Word", "Count");
+        System.out.println(string);
+        System.out.println("------------------------------------------");
+
+        wordsWithCount.forEach(e -> {
+            String string2 = String.format("%20s %20s", e.getWord(), e.getWordCount());
+            System.out.println(string2);
+        });
     }
 }
