@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffe236cc-a21c-4d2d-a9b7-d0f9fc9c1f39" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/foo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dist/foobar.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dist/kjbible.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dist/stopwords.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dist/usdeclar.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/movies/DataSink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/DataSink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/movies/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/DataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/movies/LinesToWordsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/LinesToWordsFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/movies/StemmerFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/StemmerFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/movies/StopWordsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/StopWordsFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/movies/PipeAndFilterRunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/movies/PipeAndFilterRunnerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/movies/PipeAndFilterRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/PipeAndFilterRunner.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +77,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in pipe-and-filter">
+  <component name="RunManager" selected="JUnit.PipeAndFilterRunnerTest">
     <configuration name="All in pipe-and-filter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pipe-and-filter" />
       <option name="PACKAGE_NAME" value="" />
@@ -155,8 +150,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in pipe-and-filter" />
         <item itemvalue="JUnit.PipeAndFilterRunnerTest" />
+        <item itemvalue="JUnit.All in pipe-and-filter" />
         <item itemvalue="JUnit.StemmerFilterTest" />
         <item itemvalue="JUnit.LinesToWordsFilterTest.canParseWords" />
         <item itemvalue="JUnit.PipeAndFilterRunnerTest.canRunKjBible" />
@@ -279,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573157607496</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Refactoring">
+      <created>1573158775220</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1573158775220</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -300,7 +302,6 @@
     <MESSAGE value="Remove unneeded tests" />
     <MESSAGE value="Create pipes instead of storing filter reference" />
     <MESSAGE value="Move pipe class into its own file" />
-    <MESSAGE value="Refactoring" />
     <MESSAGE value="Add test for lines to words" />
     <MESSAGE value="Add test for stem filter" />
     <MESSAGE value="Name everything with filters for consistency" />
@@ -309,6 +310,7 @@
     <MESSAGE value="Abstract class -&gt; interface" />
     <MESSAGE value="Renaming" />
     <MESSAGE value="Get rid of pipeline class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Get rid of pipeline class" />
+    <MESSAGE value="Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
   </component>
 </project>

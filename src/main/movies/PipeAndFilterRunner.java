@@ -7,8 +7,8 @@ public class PipeAndFilterRunner {
         PipeFilter dataSource = new DataSource(filePath);
         PipeFilter linesToWords = new LinesToWordsFilter(dataSource);
         PipeFilter stopWordsPipeFilter = new StopWordsFilter(linesToWords);
-        PipeFilter PipeFilter = new StemmerFilter(stopWordsPipeFilter);
-        PipeFilter outputPipeFilter = new DataSink(PipeFilter);
+        PipeFilter StemmerFilter = new StemmerFilter(stopWordsPipeFilter);
+        PipeFilter outputPipeFilter = new DataSink(StemmerFilter);
 
         outputPipeFilter.run();
     }
