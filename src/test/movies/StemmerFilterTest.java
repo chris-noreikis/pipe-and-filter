@@ -10,16 +10,11 @@ import java.util.List;
 import static org.junit.Assert.assertArrayEquals;
 
 public class StemmerFilterTest {
-    private StemmerFilter g;
-
-    @Before
-    public void setUp() {
-        g = new StemmerFilter();
-    }
-
     @Test
     public void canStemWords() throws IOException {
-        List<String> output = g.doWork(Arrays.asList("jump", "jumping", "jumped"));
+        MockFilter mockFilter = new MockFilter(Arrays.asList("jump", "jumping", "jumped"));
+        PipeFilter g = g = new StemmerFilter(mockFilter);
+        List<String> output = g.run();
         List<String> expectedOutput = Arrays.asList("jump", "jump", "jump");
         assertArrayEquals(expectedOutput.toArray(), output.toArray());
     }

@@ -4,10 +4,12 @@ import java.io.IOException;
 
 public class PipeAndFilterRunner {
     public void runEverything(String filePath) throws IOException {
-        Pipeline p = new Pipeline(new DataSource(filePath), new DataSink());
-        p.addFilter(new LinesToWordsFilter());
-        p.addFilter(new StopWordsFilter());
-        p.addFilter(new StemmerFilter());
-        p.printState();
+        PipeFilter dataSource = new DataSource(filePath);
+        PipeFilter linesToWords = new LinesToWordsFilter(dataSource);
+        PipeFilter stopWordsPipeFilter = new StopWordsFilter(linesToWords);
+        PipeFilter PipeFilter = new StemmerFilter(stopWordsPipeFilter);
+        PipeFilter outputPipeFilter = new DataSink(PipeFilter);
+
+        outputPipeFilter.run();
     }
 }

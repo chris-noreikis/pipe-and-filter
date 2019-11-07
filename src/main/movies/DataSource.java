@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class DataSource {
+public class DataSource implements PipeFilter {
     private String filepath;
     public DataSource(String filepath) {
         this.filepath = filepath;
@@ -21,5 +21,10 @@ public class DataSource {
     public static List<String> getFileContents(String filePath) throws IOException {
         Path path = FileSystems.getDefault().getPath(filePath);
         return Files.readAllLines(path);
+    }
+
+    @Override
+    public List<String> run() throws IOException {
+        return DataSource.getFileContents(this.filepath);
     }
 }

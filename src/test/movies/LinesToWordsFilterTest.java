@@ -10,16 +10,11 @@ import java.util.List;
 import static org.junit.Assert.assertArrayEquals;
 
 public class LinesToWordsFilterTest {
-    private LinesToWordsFilter g;
-
-    @Before
-    public void setUp() {
-        g = new LinesToWordsFilter();
-    }
-
     @Test
     public void canParseWords() throws IOException {
-        List<String> output = g.doWork(Arrays.asList("foo     ---      bar       bar"));
+        MockFilter mockFilter = new MockFilter(Arrays.asList("foo     ---      bar       bar"));
+        PipeFilter linesToWordsFilter = new LinesToWordsFilter(mockFilter);
+        List<String> output = linesToWordsFilter.run();
         List<String> expectedOutput = Arrays.asList("foo", "bar", "bar");
         assertArrayEquals(expectedOutput.toArray(), output.toArray());
     }

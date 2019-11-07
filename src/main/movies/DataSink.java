@@ -1,11 +1,16 @@
 package movies;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Timer;
 import java.util.stream.Collectors;
 
-public class DataSink {
+public class DataSink implements PipeFilter {
+    private PipeFilter prev;
+    public DataSink(PipeFilter prev) {
+        this.prev = prev;
+    }
+
     public List<WordCount> sortAndPrune(List<WordCount> wordsWithCount) {
         return wordsWithCount.stream().sorted((o1, o2) -> {
             if (o1.getWordCount() != o2.getWordCount()) {
@@ -48,5 +53,11 @@ public class DataSink {
             String string2 = String.format("%20s %20s", e.getWord(), e.getWordCount());
             System.out.println(string2);
         });
+    }
+
+    @Override
+    public List<String> run() throws IOException {
+        this.printTable(prev.run());
+        return null;
     }
 }

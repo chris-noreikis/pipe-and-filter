@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ffe236cc-a21c-4d2d-a9b7-d0f9fc9c1f39" name="Default Changelist" comment="Abstract class -&gt; interface">
+    <list default="true" id="ffe236cc-a21c-4d2d-a9b7-d0f9fc9c1f39" name="Default Changelist" comment="Renaming">
+      <change afterPath="$PROJECT_DIR$/src/test/movies/MockFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/movies/DataSink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/DataSink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/movies/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/DataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/movies/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/PipeFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/movies/LinesToWordsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/LinesToWordsFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/movies/Pipe.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/movies/PipeAndFilterRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/PipeAndFilterRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/movies/StemFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/StemmerFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/movies/StemFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/movies/StemmerFilterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/movies/Pipeline.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/movies/StemmerFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/StemmerFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/movies/StopWordsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/StopWordsFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/movies/LinesToWordsFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/movies/LinesToWordsFilterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/movies/StemmerFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/movies/StemmerFilterTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +62,9 @@
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/movies" />
   </component>
   <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="movies" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="movies" />
     </key>
@@ -67,19 +81,42 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PipeAndFilterRunnerTest.canRunKjBible">
-    <configuration name="PipeAndFilterRunnerTest.canRunDeclaration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PipeAndFilterRunnerTest">
+    <configuration name="All in pipe-and-filter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pipe-and-filter" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinesToWordsFilterTest.canParseWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pipe-and-filter" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="movies.PipeAndFilterRunner" />
+          <option name="PATTERN" value="movies.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="movies" />
+      <option name="MAIN_CLASS_NAME" value="movies.LinesToWordsFilterTest" />
+      <option name="METHOD_NAME" value="canParseWords" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PipeAndFilterRunnerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pipe-and-filter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="movies.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="movies" />
       <option name="MAIN_CLASS_NAME" value="movies.PipeAndFilterRunnerTest" />
-      <option name="METHOD_NAME" value="canRunDeclaration" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -100,61 +137,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StemmerFilterTest.canParseWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StemmerFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pipe-and-filter" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="movies.PipeAndFilterRunner" />
+          <option name="PATTERN" value="movies.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="movies" />
       <option name="MAIN_CLASS_NAME" value="movies.StemmerFilterTest" />
-      <option name="METHOD_NAME" value="canParseWords" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StemmerFilterTest.canStemWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pipe-and-filter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="movies.PipeAndFilterRunner" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="movies" />
-      <option name="MAIN_CLASS_NAME" value="movies.StemmerFilterTest" />
-      <option name="METHOD_NAME" value="canStemWords" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StopWordsFilterTest.canStemWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pipe-and-filter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="movies.PipeAndFilterRunner" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="movies" />
-      <option name="MAIN_CLASS_NAME" value="movies.StopWordsFilterTest" />
-      <option name="METHOD_NAME" value="canStemWords" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PipeAndFilterRunnerTest" />
+        <item itemvalue="JUnit.All in pipe-and-filter" />
+        <item itemvalue="JUnit.StemmerFilterTest" />
+        <item itemvalue="JUnit.LinesToWordsFilterTest.canParseWords" />
         <item itemvalue="JUnit.PipeAndFilterRunnerTest.canRunKjBible" />
-        <item itemvalue="JUnit.PipeAndFilterRunnerTest.canRunDeclaration" />
-        <item itemvalue="JUnit.StopWordsFilterTest.canStemWords" />
-        <item itemvalue="JUnit.StemmerFilterTest.canStemWords" />
-        <item itemvalue="JUnit.StemmerFilterTest.canParseWords" />
       </list>
     </recent_temporary>
   </component>
@@ -260,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573099270965</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Renaming">
+      <created>1573101274724</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1573101274724</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,7 +279,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -286,6 +299,18 @@
     <MESSAGE value="Remove unused imports" />
     <MESSAGE value="Add timing things" />
     <MESSAGE value="Abstract class -&gt; interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="Abstract class -&gt; interface" />
+    <MESSAGE value="Renaming" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renaming" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/movies/DataSink.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

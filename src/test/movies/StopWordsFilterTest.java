@@ -1,5 +1,6 @@
 package movies;
 
+import javafx.scene.paint.Stop;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,16 +12,11 @@ import java.util.List;
 import static org.junit.Assert.assertArrayEquals;
 
 public class StopWordsFilterTest {
-    private StopWordsFilter g;
-
-    @Before
-    public void setUp() {
-        g = new StopWordsFilter();
-    }
-
     @Test
     public void canFilterStopWords() throws IOException {
-        List<String> output = g.doWork(Arrays.asList("of", "the", "ocean"));
+        MockFilter mockFilter = new MockFilter(Arrays.asList("of", "the", "ocean"));
+        StopWordsFilter g = new StopWordsFilter(mockFilter);
+        List<String> output = g.run();
         List<String> expectedOutput = Collections.singletonList("ocean");
         assertArrayEquals(expectedOutput.toArray(), output.toArray());
     }
