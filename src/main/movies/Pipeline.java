@@ -28,10 +28,6 @@ public class Pipeline {
         this.filters.add(f);
     }
 
-    public void setDataSource(DataSource dataSource) {
-        this.dataSource = dataSource;
-    }
-
     public void setDataSink(DataSink dataSink) {
         this.dataSink = dataSink;
     }
@@ -48,7 +44,6 @@ public class Pipeline {
 
     public void printState() {
         this.applyFilters();
-        System.out.println("this.state = " + this.state);
         this.dataSink.printTable(this.state);
     }
 }

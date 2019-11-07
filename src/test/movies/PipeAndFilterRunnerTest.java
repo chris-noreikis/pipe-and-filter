@@ -21,7 +21,12 @@ public class PipeAndFilterRunnerTest {
     }
 
     @Test
-    public void canRunIntegrationTestWithoutExplodingLoudly() throws IOException {
+    public void canRunDeclaration() throws IOException {
         g.runEverything("/Users/statswidgets/workspace/pipe-and-filter/inputs/usdeclar.txt");
+    }
+
+    @Test
+    public void canRunKjBible() throws IOException {
+        g.runEverything("/Users/statswidgets/workspace/pipe-and-filter/inputs/kjbible.txt");
     }
 }
