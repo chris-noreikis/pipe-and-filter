@@ -2,6 +2,7 @@ package movies;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Timer;
 import java.util.stream.Collectors;
 
 public class DataSink {
@@ -35,8 +36,10 @@ public class DataSink {
     }
 
     public void printTable(List<String> input) {
+        StopWatch.time(DataSink.class.toString());
         List<WordCount> wordsWithCount = this.getMostFrequentlyOccurringWordCount(input);
         wordsWithCount = this.sortAndPrune(wordsWithCount);
+        StopWatch.timeEnd(DataSink.class.toString());
         String string = String.format("%20s %20s", "Word", "Count");
         System.out.println(string);
         System.out.println("------------------------------------------");
