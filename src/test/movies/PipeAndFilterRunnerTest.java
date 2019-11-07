@@ -22,7 +22,7 @@ public class PipeAndFilterRunnerTest {
 
     @Test
     public void canReadInputFile() throws IOException {
-        assertThat(DataSource.getFileContents("/Users/chris/workspace/textprocessing/inputs/foobar.txt"), hasItems("foo", "bar"));
+        assertThat(DataSource.getFileContents("/Users/statswidgets/workspace/pipe-and-filter/inputs/foobar.txt"), hasItems("foo", "bar"));
     }
 
     @Test
@@ -99,6 +99,6 @@ public class PipeAndFilterRunnerTest {
 
     @Test
     public void canRunIntegrationTestWithoutExplodingLoudly() throws IOException {
-        g.runEverything("/Users/chris/workspace/textprocessing/inputs/usdeclar.txt");
+        g.runEverything("/Users/statswidgets/workspace/pipe-and-filter/inputs/usdeclar.txt");
     }
 }

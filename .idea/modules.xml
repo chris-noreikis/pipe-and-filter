@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/textprocessing.iml" filepath="$PROJECT_DIR$/.idea/textprocessing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/pipe-and-filter.iml" filepath="$PROJECT_DIR$/src/pipe-and-filter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/workspace.pipe-and-filter.iml" filepath="$PROJECT_DIR$/.idea/modules/workspace.pipe-and-filter.iml" />
     </modules>
   </component>
 </project>
