@@ -14,12 +14,9 @@ public class DataSource implements PipeFilter {
         this.filepath = filepath;
     }
 
-    public List<String> fetchData() throws IOException {
-        return DataSource.getFileContents(filepath);
-    }
-
     public static List<String> getFileContents(String filePath) throws IOException {
         Path path = FileSystems.getDefault().getPath(filePath);
+        System.out.println("                     Parsing: " + path.getFileName());
         return Files.readAllLines(path);
     }
 

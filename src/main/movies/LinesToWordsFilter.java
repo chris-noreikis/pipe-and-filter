@@ -6,15 +6,15 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class LinesToWordsFilter implements PipeFilter {
-    private PipeFilter outputPipeFilter;
+    private PipeFilter previousFilter;
 
-    public LinesToWordsFilter(PipeFilter outputPipeFilter) {
-        this.outputPipeFilter = outputPipeFilter;
+    public LinesToWordsFilter(PipeFilter previousFilter) {
+        this.previousFilter = previousFilter;
     }
 
     @Override
     public List<String> run() throws IOException {
-        List<String> input = outputPipeFilter.run();
+        List<String> input = previousFilter.run();
         StopWatch.time(LinesToWordsFilter.class.toString());
         List<String> output = input.stream().flatMap(e -> {
             return Arrays.stream(e.replaceAll("[^A-Za-z\\s+]", "").toLowerCase().split("\\s+"));

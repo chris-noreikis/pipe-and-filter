@@ -5,12 +5,13 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class StemmerFilter implements PipeFilter {
-    private PipeFilter outputPipeFilter;
+    private PipeFilter previousFilter;
 
     public StemmerFilter(PipeFilter f) {
-        this.outputPipeFilter = f;
+        this.previousFilter = f;
     }
-    public static List<String> transformIntoRoot(List<String> input) throws IOException {
+
+    public List<String> transformIntoRoot(List<String> input) throws IOException {
         return input
                 .stream()
                 .map(e -> {
@@ -24,9 +25,9 @@ public class StemmerFilter implements PipeFilter {
 
     @Override
     public List<String> run() throws IOException {
-        List<String> input = this.outputPipeFilter.run();
+        List<String> input = this.previousFilter.run();
         StopWatch.time(StemmerFilter.class.toString());
-        List<String> output = StemmerFilter.transformIntoRoot(input);
+        List<String> output = this.transformIntoRoot(input);
         StopWatch.timeEnd(StemmerFilter.class.toString());
         return output;
     }

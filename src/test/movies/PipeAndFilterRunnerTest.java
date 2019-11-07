@@ -16,11 +16,12 @@ public class PipeAndFilterRunnerTest {
 
     @Test
     public void canRunDeclaration() throws IOException {
-        g.runEverything("/Users/statswidgets/workspace/pipe-and-filter/inputs/usdeclar.txt");
+        System.out.println(System.getProperty("user.dir"));
+        g.runEverything("dist/usdeclar.txt");
     }
 
     @Test
     public void canRunKjBible() throws IOException {
-        g.runEverything("/Users/statswidgets/workspace/pipe-and-filter/inputs/kjbible.txt");
+        g.runEverything("dist/kjbible.txt");
     }
 }

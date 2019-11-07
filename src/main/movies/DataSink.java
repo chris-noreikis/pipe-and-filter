@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class DataSink implements PipeFilter {
-    private PipeFilter prev;
-    public DataSink(PipeFilter prev) {
-        this.prev = prev;
+    private PipeFilter previousFilter;
+    public DataSink(PipeFilter previousFilter) {
+        this.previousFilter = previousFilter;
     }
 
     public List<WordCount> sortAndPrune(List<WordCount> wordsWithCount) {
@@ -45,19 +45,20 @@ public class DataSink implements PipeFilter {
         List<WordCount> wordsWithCount = this.getMostFrequentlyOccurringWordCount(input);
         wordsWithCount = this.sortAndPrune(wordsWithCount);
         StopWatch.timeEnd(DataSink.class.toString());
-        String string = String.format("%20s %20s", "Word", "Count");
+        System.out.println();
+        String string = String.format("%35s %20s", "Word", "Count");
         System.out.println(string);
-        System.out.println("------------------------------------------");
+        System.out.println("------------------------------------------------------------");
 
         wordsWithCount.forEach(e -> {
-            String string2 = String.format("%20s %20s", e.getWord(), e.getWordCount());
+            String string2 = String.format("%35s %20s", e.getWord(), e.getWordCount());
             System.out.println(string2);
         });
     }
 
     @Override
     public List<String> run() throws IOException {
-        this.printTable(prev.run());
+        this.printTable(previousFilter.run());
         return null;
     }
 }
