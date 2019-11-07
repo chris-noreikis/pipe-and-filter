@@ -7,7 +7,7 @@ public class PipeAndFilterRunner {
         Pipeline p = new Pipeline(new DataSource(filePath), new DataSink());
         p.addFilter(new LinesToWords());
         p.addFilter(new StopWords());
-        p.addFilter(new Stemming());
+        p.addFilter(new StemFilter());
         p.printState();
     }
 }

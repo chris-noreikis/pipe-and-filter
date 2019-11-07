@@ -66,7 +66,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LinesToWordsTest">
+  <component name="RunManager" selected="JUnit.StemFilterTest.canStemWords">
     <configuration name="LinesToWordsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pipe-and-filter" />
       <extension name="coverage">
@@ -113,7 +113,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PipeAndFilterRunnerTest.canRunIntegrationTestWithoutExplodingLoudly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StemFilterTest.canParseWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pipe-and-filter" />
       <extension name="coverage">
         <pattern>
@@ -122,14 +122,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="movies" />
-      <option name="MAIN_CLASS_NAME" value="movies.PipeAndFilterRunnerTest" />
-      <option name="METHOD_NAME" value="canRunIntegrationTestWithoutExplodingLoudly" />
+      <option name="MAIN_CLASS_NAME" value="movies.StemFilterTest" />
+      <option name="METHOD_NAME" value="canParseWords" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PipeAndFilterRunnerTest.canRunKjBible" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StemFilterTest.canStemWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pipe-and-filter" />
       <extension name="coverage">
         <pattern>
@@ -138,8 +138,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="movies" />
-      <option name="MAIN_CLASS_NAME" value="movies.PipeAndFilterRunnerTest" />
-      <option name="METHOD_NAME" value="canRunKjBible" />
+      <option name="MAIN_CLASS_NAME" value="movies.StemFilterTest" />
+      <option name="METHOD_NAME" value="canStemWords" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StemFilterTest.canStemWords" />
+        <item itemvalue="JUnit.StemFilterTest.canParseWords" />
         <item itemvalue="JUnit.LinesToWordsTest" />
         <item itemvalue="JUnit.LinesToWordsTest.canParseWordFromDash" />
         <item itemvalue="JUnit.PipeAndFilterRunnerTest" />
-        <item itemvalue="JUnit.PipeAndFilterRunnerTest.canRunKjBible" />
-        <item itemvalue="JUnit.PipeAndFilterRunnerTest.canRunIntegrationTestWithoutExplodingLoudly" />
       </list>
     </recent_temporary>
   </component>
