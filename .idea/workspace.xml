@@ -64,12 +64,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StopWordsFilterTest.canStemWords">
+  <component name="RunManager" selected="JUnit.PipeAndFilterRunnerTest.canRunDeclaration">
     <configuration name="LinesToWordsFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pipe-and-filter" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="movies.*" />
+          <option name="PATTERN" value="movies.PipeAndFilterRunner" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,17 +80,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinesToWordsFilterTest.canParseWordFromDash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PipeAndFilterRunnerTest.canRunDeclaration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pipe-and-filter" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="movies.*" />
+          <option name="PATTERN" value="movies.PipeAndFilterRunner" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="movies" />
-      <option name="MAIN_CLASS_NAME" value="movies.LinesToWordsFilterTest" />
-      <option name="METHOD_NAME" value="canParseWordFromDash" />
+      <option name="MAIN_CLASS_NAME" value="movies.PipeAndFilterRunnerTest" />
+      <option name="METHOD_NAME" value="canRunDeclaration" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -100,7 +100,7 @@
       <module name="pipe-and-filter" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="movies.*" />
+          <option name="PATTERN" value="movies.PipeAndFilterRunner" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,7 +116,7 @@
       <module name="pipe-and-filter" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="movies.*" />
+          <option name="PATTERN" value="movies.PipeAndFilterRunner" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,7 +132,7 @@
       <module name="pipe-and-filter" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="movies.*" />
+          <option name="PATTERN" value="movies.PipeAndFilterRunner" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PipeAndFilterRunnerTest.canRunDeclaration" />
         <item itemvalue="JUnit.StopWordsFilterTest.canStemWords" />
         <item itemvalue="JUnit.StemFilterTest.canStemWords" />
         <item itemvalue="JUnit.StemFilterTest.canParseWords" />
         <item itemvalue="JUnit.LinesToWordsFilterTest" />
-        <item itemvalue="JUnit.LinesToWordsFilterTest.canParseWordFromDash" />
       </list>
     </recent_temporary>
   </component>
