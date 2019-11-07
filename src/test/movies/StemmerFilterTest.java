@@ -9,12 +9,12 @@ import java.util.List;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class StemFilterTest {
-    private StemFilter g;
+public class StemmerFilterTest {
+    private StemmerFilter g;
 
     @Before
     public void setUp() {
-        g = new StemFilter();
+        g = new StemmerFilter();
     }
 
     @Test

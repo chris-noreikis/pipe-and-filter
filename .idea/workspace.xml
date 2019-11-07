@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ffe236cc-a21c-4d2d-a9b7-d0f9fc9c1f39" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/movies/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/Filter.java" afterDir="false" />
+    <list default="true" id="ffe236cc-a21c-4d2d-a9b7-d0f9fc9c1f39" name="Default Changelist" comment="Abstract class -&gt; interface">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/movies/PipeAndFilterRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/PipeAndFilterRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/movies/StemFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/StemmerFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/movies/StemFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/movies/StemmerFilterTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,22 +67,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PipeAndFilterRunnerTest.canRunDeclaration">
-    <configuration name="LinesToWordsFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pipe-and-filter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="movies.PipeAndFilterRunner" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="movies" />
-      <option name="MAIN_CLASS_NAME" value="movies.LinesToWordsFilterTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PipeAndFilterRunnerTest.canRunKjBible">
     <configuration name="PipeAndFilterRunnerTest.canRunDeclaration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pipe-and-filter" />
       <extension name="coverage">
@@ -96,7 +84,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StemFilterTest.canParseWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PipeAndFilterRunnerTest.canRunKjBible" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pipe-and-filter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="movies.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="movies" />
+      <option name="MAIN_CLASS_NAME" value="movies.PipeAndFilterRunnerTest" />
+      <option name="METHOD_NAME" value="canRunKjBible" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StemmerFilterTest.canParseWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pipe-and-filter" />
       <extension name="coverage">
         <pattern>
@@ -105,14 +109,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="movies" />
-      <option name="MAIN_CLASS_NAME" value="movies.StemFilterTest" />
+      <option name="MAIN_CLASS_NAME" value="movies.StemmerFilterTest" />
       <option name="METHOD_NAME" value="canParseWords" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StemFilterTest.canStemWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StemmerFilterTest.canStemWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pipe-and-filter" />
       <extension name="coverage">
         <pattern>
@@ -121,7 +125,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="movies" />
-      <option name="MAIN_CLASS_NAME" value="movies.StemFilterTest" />
+      <option name="MAIN_CLASS_NAME" value="movies.StemmerFilterTest" />
       <option name="METHOD_NAME" value="canStemWords" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -146,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PipeAndFilterRunnerTest.canRunKjBible" />
         <item itemvalue="JUnit.PipeAndFilterRunnerTest.canRunDeclaration" />
         <item itemvalue="JUnit.StopWordsFilterTest.canStemWords" />
-        <item itemvalue="JUnit.StemFilterTest.canStemWords" />
-        <item itemvalue="JUnit.StemFilterTest.canParseWords" />
-        <item itemvalue="JUnit.LinesToWordsFilterTest" />
+        <item itemvalue="JUnit.StemmerFilterTest.canStemWords" />
+        <item itemvalue="JUnit.StemmerFilterTest.canParseWords" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573098998570</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Abstract class -&gt; interface">
+      <created>1573099270965</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1573099270965</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -274,6 +285,7 @@
     <MESSAGE value="Name everything with filters for consistency" />
     <MESSAGE value="Remove unused imports" />
     <MESSAGE value="Add timing things" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add timing things" />
+    <MESSAGE value="Abstract class -&gt; interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="Abstract class -&gt; interface" />
   </component>
 </project>
