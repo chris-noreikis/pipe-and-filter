@@ -12,7 +12,6 @@ public class StopWords implements Filter {
         Path path = FileSystems.getDefault().getPath("/Users/statswidgets/workspace/pipe-and-filter/inputs/stopwords.txt");
         List<String> stopwords = Files.readAllLines(path);
         List<String> stopWords = input.stream().filter(e -> !stopwords.contains(e)).collect(Collectors.toList());
-        System.out.println("stopWords = " + stopWords);
         return stopWords;
     }
 

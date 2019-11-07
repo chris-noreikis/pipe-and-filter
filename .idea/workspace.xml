@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ffe236cc-a21c-4d2d-a9b7-d0f9fc9c1f39" name="Default Changelist" comment="Remove unneeded tests">
+    <list default="true" id="ffe236cc-a21c-4d2d-a9b7-d0f9fc9c1f39" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/movies/PipeAndFilterRunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/movies/PipeAndFilterRunnerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/movies/PipeAndFilterRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/PipeAndFilterRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/movies/Pipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/Pipeline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/movies/StopWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/StopWords.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +61,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PipeAndFilterRunnerTest.canRunKjBible">
+  <component name="RunManager" selected="JUnit.PipeAndFilterRunnerTest">
     <configuration name="PipeAndFilterRunnerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pipe-and-filter" />
       <extension name="coverage">
@@ -109,9 +111,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PipeAndFilterRunnerTest" />
         <item itemvalue="JUnit.PipeAndFilterRunnerTest.canRunKjBible" />
         <item itemvalue="JUnit.PipeAndFilterRunnerTest.canRunIntegrationTestWithoutExplodingLoudly" />
-        <item itemvalue="JUnit.PipeAndFilterRunnerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573091455356</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refactoring">
+      <created>1573095648393</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573095648393</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,8 +172,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fix tests" />
-    <MESSAGE value="Refactoring" />
     <MESSAGE value="Remove unneeded tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove unneeded tests" />
+    <MESSAGE value="Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
   </component>
 </project>

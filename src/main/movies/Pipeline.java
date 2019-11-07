@@ -4,38 +4,54 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+class Pipe {
+    private Filter filter;
+    private Pipe next;
+
+    Pipe(Filter filter) {
+        this.filter = filter;
+    }
+
+    public Pipe getNext() {
+        return next;
+    }
+
+    public void setNext(Pipe next) {
+        this.next = next;
+    }
+
+    public List<String> applyFilter(List<String> input) throws IOException {
+        return this.filter.doWork(input);
+    }
+}
+
 public class Pipeline {
-    private DataSource dataSource;
     private DataSink dataSink;
-    private List<Filter> filters;
+    private List<Pipe> pipes;
     private List<String> state;
 
     public Pipeline(DataSource dataSource) throws IOException {
-        this.dataSource = dataSource;
-        this.filters = new ArrayList<>();
+        this.pipes = new ArrayList<>();
         this.state = dataSource.fetchData();
     }
 
-    public DataSource getDataSource() {
-        return dataSource;
-    }
-
-    public DataSink getDataSink() {
-        return dataSink;
-    }
-
     public void addFilter(Filter f) {
-        this.filters.add(f);
+        Pipe pipe = new Pipe(f);
+        if (this.pipes.size() > 1) {
+            Pipe lastPipe = this.pipes.get(this.pipes.size() - 1);
+            lastPipe.setNext(pipe);
+        }
+        this.pipes.add(pipe);
     }
 
     public void setDataSink(DataSink dataSink) {
         this.dataSink = dataSink;
     }
 
-    private void applyFilters() {
-        this.filters.forEach(f -> {
+    private void applyPipes() {
+        this.pipes.forEach(p -> {
             try {
-                this.state = f.doWork(this.state);
+                this.state = p.applyFilter(this.state);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -43,7 +59,7 @@ public class Pipeline {
     }
 
     public void printState() {
-        this.applyFilters();
+        this.applyPipes();
         this.dataSink.printTable(this.state);
     }
 }
