@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffe236cc-a21c-4d2d-a9b7-d0f9fc9c1f39" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/movies/LinesToWordsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/movies/LinesToWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/LinesToWords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/movies/StopWordsTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,8 +64,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StemFilterTest.canStemWords">
-    <configuration name="LinesToWordsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.StopWordsFilterTest.canStemWords">
+    <configuration name="LinesToWordsFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pipe-and-filter" />
       <extension name="coverage">
         <pattern>
@@ -76,13 +74,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="movies" />
-      <option name="MAIN_CLASS_NAME" value="movies.LinesToWordsTest" />
+      <option name="MAIN_CLASS_NAME" value="movies.LinesToWordsFilterTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinesToWordsTest.canParseWordFromDash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LinesToWordsFilterTest.canParseWordFromDash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pipe-and-filter" />
       <extension name="coverage">
         <pattern>
@@ -91,24 +89,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="movies" />
-      <option name="MAIN_CLASS_NAME" value="movies.LinesToWordsTest" />
+      <option name="MAIN_CLASS_NAME" value="movies.LinesToWordsFilterTest" />
       <option name="METHOD_NAME" value="canParseWordFromDash" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PipeAndFilterRunnerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pipe-and-filter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="movies.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="movies" />
-      <option name="MAIN_CLASS_NAME" value="movies.PipeAndFilterRunnerTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -145,13 +128,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StopWordsFilterTest.canStemWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pipe-and-filter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="movies.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="movies" />
+      <option name="MAIN_CLASS_NAME" value="movies.StopWordsFilterTest" />
+      <option name="METHOD_NAME" value="canStemWords" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StopWordsFilterTest.canStemWords" />
         <item itemvalue="JUnit.StemFilterTest.canStemWords" />
         <item itemvalue="JUnit.StemFilterTest.canParseWords" />
-        <item itemvalue="JUnit.LinesToWordsTest" />
-        <item itemvalue="JUnit.LinesToWordsTest.canParseWordFromDash" />
-        <item itemvalue="JUnit.PipeAndFilterRunnerTest" />
+        <item itemvalue="JUnit.LinesToWordsFilterTest" />
+        <item itemvalue="JUnit.LinesToWordsFilterTest.canParseWordFromDash" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +214,21 @@
       <option name="project" value="LOCAL" />
       <updated>1573096365724</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add test for lines to words">
+      <created>1573096761646</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1573096761646</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add test for stem filter">
+      <created>1573096910923</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1573096910923</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,6 +248,8 @@
     <MESSAGE value="Create pipes instead of storing filter reference" />
     <MESSAGE value="Move pipe class into its own file" />
     <MESSAGE value="Refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
+    <MESSAGE value="Add test for lines to words" />
+    <MESSAGE value="Add test for stem filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add test for stem filter" />
   </component>
 </project>

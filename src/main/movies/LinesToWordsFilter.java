@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class LinesToWords implements Filter {
+public class LinesToWordsFilter implements Filter {
     @Override
     public List<String> doWork(List<String> input) throws IOException {
         return input.stream().flatMap(e -> {

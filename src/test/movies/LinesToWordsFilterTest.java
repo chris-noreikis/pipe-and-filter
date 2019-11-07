@@ -9,12 +9,12 @@ import java.util.List;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class LinesToWordsTest {
-    private LinesToWords g;
+public class LinesToWordsFilterTest {
+    private LinesToWordsFilter g;
 
     @Before
     public void setUp() {
-        g = new LinesToWords();
+        g = new LinesToWordsFilter();
     }
 
     @Test
