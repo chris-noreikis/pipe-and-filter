@@ -9,9 +9,10 @@ public class Pipeline {
     private List<Pipe> pipes;
     private List<String> state;
 
-    public Pipeline(DataSource dataSource) throws IOException {
+    public Pipeline(DataSource dataSource, DataSink dataSink) throws IOException {
         this.pipes = new ArrayList<>();
         this.state = dataSource.fetchData();
+        this.dataSink = dataSink;
     }
 
     public void addFilter(Filter f) {
@@ -21,10 +22,6 @@ public class Pipeline {
             lastPipe.setNext(pipe);
         }
         this.pipes.add(pipe);
-    }
-
-    public void setDataSink(DataSink dataSink) {
-        this.dataSink = dataSink;
     }
 
     private void applyPipes() {
