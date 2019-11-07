@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class StemFilter extends Filter {
+public class StemFilter implements Filter {
     public static List<String> transformIntoRoot(List<String> input) throws IOException {
         return input
                 .stream()

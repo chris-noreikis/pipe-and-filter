@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class LinesToWordsFilter extends Filter {
+public class LinesToWordsFilter implements Filter {
     @Override
     public List<String> doWork(List<String> input) throws IOException {
         StopWatch.time(LinesToWordsFilter.class.toString());
