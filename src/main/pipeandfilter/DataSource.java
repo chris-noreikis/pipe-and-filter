@@ -7,12 +7,13 @@ import java.nio.file.Path;
 import java.util.List;
 
 public class DataSource implements PipeFilter {
-    private String filepath;
-    public DataSource(String filepath) {
-        this.filepath = filepath;
+    private List<String> lines;
+
+    public DataSource(String filepath) throws IOException {
+        this.lines = this.getFileContents(filepath);
     }
 
-    public static List<String> getFileContents(String filePath) throws IOException {
+    public List<String> getFileContents(String filePath) throws IOException {
         Path path = FileSystems.getDefault().getPath(filePath);
         System.out.println("                     Parsing: " + path.getFileName());
         return Files.readAllLines(path);
@@ -20,6 +21,6 @@ public class DataSource implements PipeFilter {
 
     @Override
     public List<String> run() throws IOException {
-        return DataSource.getFileContents(this.filepath);
+        return lines;
     }
 }

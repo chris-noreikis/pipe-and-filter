@@ -44,10 +44,9 @@ public class DataSink implements PipeFilter {
         StopWatch.time(DataSink.class.toString());
         List<WordCount> wordsWithCount = this.getMostFrequentlyOccurringWordCount(input);
         wordsWithCount = this.sortAndPrune(wordsWithCount);
-        StopWatch.timeEnd(DataSink.class.toString());
-
         printTableHeader();
         printTableBody(wordsWithCount);
+        StopWatch.timeEnd(DataSink.class.toString());
     }
 
     private void printTableBody(List<WordCount> wordsWithCount) {

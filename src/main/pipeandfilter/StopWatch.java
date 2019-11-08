@@ -3,19 +3,22 @@ package pipeandfilter;
 import java.util.HashMap;
 
 public class StopWatch {
-    static HashMap<String, Long> labels = new HashMap<>();
+    static HashMap<String, StopWatchItem> labels = new HashMap<>();
 
     public static void time(String label) {
-        labels.put(label, System.currentTimeMillis());
+        StopWatchItem item = new StopWatchItem();
+        labels.put(label, item);
     }
 
     public static void timeEnd(String label) {
-        Long startTime = labels.get(label);
+        StopWatchItem item = labels.get(label);
         if (labels.containsKey(label)) {
-            Long endTime = System.currentTimeMillis();
-            Long ellapsedMilliseconds =  endTime - startTime;
-            System.out.println(String.format("%45s | Milliseconds | %4s", label, ellapsedMilliseconds));
+            item.stop();
         }
+    }
+
+    public static void printTimerTable() {
+        labels.forEach((key, value) -> System.out.println(String.format("%45s | Milliseconds | %4s", key, value.elapsedTime())));
     }
 
     private long startTime;

@@ -13,6 +13,8 @@ public class PipeAndFilterRunner {
         StopWatch.time("Total Pipeline");
         outputPipeFilter.run();
         StopWatch.timeEnd("Total Pipeline");
+        System.out.println("About to print timer");
+        StopWatch.printTimerTable();
     }
 
     public static void main(String[] args) throws IOException {

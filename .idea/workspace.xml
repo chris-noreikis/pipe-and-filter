@@ -2,22 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffe236cc-a21c-4d2d-a9b7-d0f9fc9c1f39" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/pipeandfilter/StopWatchItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/DataSink.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/DataSink.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/DataSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/DataSource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/LinesToWordsFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/LinesToWordsFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/StemmerFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/StemmerFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/PipeAndFilterRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/PipeAndFilterRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/Stemmer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/Stemmer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/StopWordsFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/StopWordsFilter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/DataSink.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/DataSink.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/DataSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/DataSource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/LinesToWordsFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/LinesToWordsFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/StemmerFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/StemmerFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/PipeAndFilterRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/PipeAndFilterRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/Stemmer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/Stemmer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/StopWordsFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/StopWordsFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/textprocessing-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/textprocessing-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/pipeandfilter/DataSink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/pipeandfilter/DataSink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/pipeandfilter/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/pipeandfilter/DataSource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/pipeandfilter/PipeAndFilterRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/pipeandfilter/PipeAndFilterRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/pipeandfilter/StopWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/pipeandfilter/StopWatch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/pipeandfilter/StopWordsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/pipeandfilter/StopWordsFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/pipeandfilter/PipeAndFilterRunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/pipeandfilter/PipeAndFilterRunnerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,27 +88,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PipeAndFilterRunnerTest">
-    <configuration name="PipeAndFilterRunnerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pipe-and-filter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pipeandfilter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="movies" />
-      <option name="MAIN_CLASS_NAME" value="movies.PipeAndFilterRunnerTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="" />
+      <module name="pipe-and-filter" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="$APPLICATION_HOME_DIR$/jbr/Contents/Home" />
+      <option name="PACKAGE_NAME" value="pipeandfilter" />
+      <option name="MAIN_CLASS_NAME" value="pipeandfilter.PipeAndFilterRunnerTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="PARAMETERS" value="" />
@@ -117,6 +104,7 @@
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="pipe-and-filter" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
@@ -126,15 +114,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.PipeAndFilterRunnerTest" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.PipeAndFilterRunnerTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -329,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573246961077</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Fix renaming mixup">
+      <created>1573247367394</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1573247367394</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -398,6 +384,7 @@
     <MESSAGE value="Rename directory" />
     <MESSAGE value="Version the build directory" />
     <MESSAGE value="Revert &quot;Remove StopWatch calls for p1 submission&quot;&#10;&#10;This reverts commit 89a9c5f1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;Remove StopWatch calls for p1 submission&quot;&#10;&#10;This reverts commit 89a9c5f1" />
+    <MESSAGE value="Fix renaming mixup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix renaming mixup" />
   </component>
 </project>

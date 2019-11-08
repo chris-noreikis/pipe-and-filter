@@ -14,10 +14,10 @@ public class PipeAndFilterRunnerTest {
         g = new PipeAndFilterRunner();
     }
 
-    @Test
-    public void canRunDeclaration() throws IOException {
-        g.runEverything("src/dist/usdeclar.txt");
-    }
+//    @Test
+//    public void canRunDeclaration() throws IOException {
+//        g.runEverything("src/dist/usdeclar.txt");
+//    }
 
     @Test
     public void canRunKjBible() throws IOException {
