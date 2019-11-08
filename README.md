@@ -1,7 +1,7 @@
 ## Pipe and Filter
 
 #### Run Instructions:
-The project can be run using `gradle run` or the unit tests in `./test/pipeandfilter/PipeAndFilterRunnerTest`.  Usage:
+The project can be run using `gradle run` or the compiled jar.  Usage:
 
 1. `./gradlew run --args='src/dist/kjbible.txt' -i` or `./gradlew run --args='src/dist/kjbible.txt' -i` 
-1. In a Java IDE, right click `./test/pipeandfilter/PipeAndFilterRunnerTest` and click run test.  The IDE's working directory may need to be changed to the project root instead of `src` to resolve input filepath.
+1. `java -jar build/libs/textprocessing-1.0-SNAPSHOT.jar src/dist/kjbible.txt`
