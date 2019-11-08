@@ -1,7 +1,7 @@
 ## Pipe and Filter
 
 #### Run Instructions:
-The project is built / run using the two unit tests in `PipeAndFilterRunnerTest`.  Either:
+The project can be run using `gradle run` or the unit tests in `./test/movies/PipeAndFilterRunnerTest`.  Usage:
 
-1. Right click the test file in IDE and click 'Run'
-1. gradle run --args='arg1 arg2' 
+1. `./gradlew run src/dist/kjbible.txt -i` or `./gradlew run src/dist/usdeclar.txt -i` 
+1. In a Java IDE, right click `./test/movies/PipeAndFilterRunnerTest` and click run test.  The IDE's working directory may need to be changed to the project root instead of `src` to resolve input filepath.

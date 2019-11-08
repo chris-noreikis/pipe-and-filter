@@ -1,8 +1,6 @@
 package movies;
 
 import java.io.IOException;
-import java.nio.file.FileSystem;
-import java.nio.file.FileSystems;
 
 public class PipeAndFilterRunner {
     public void runEverything(String filePath) throws IOException {

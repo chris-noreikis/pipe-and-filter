@@ -15,7 +15,7 @@ public class StopWordsFilter implements PipeFilter {
     }
 
     public List<String> applyStopWords(List<String> input) throws IOException {
-        Path path = FileSystems.getDefault().getPath("dist/stopwords.txt");
+        Path path = FileSystems.getDefault().getPath("src/dist/stopwords.txt");
         List<String> stopwords = Files.readAllLines(path);
         return input.stream().filter(e -> !stopwords.contains(e)).collect(Collectors.toList());
     }

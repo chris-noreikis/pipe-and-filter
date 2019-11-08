@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ffe236cc-a21c-4d2d-a9b7-d0f9fc9c1f39" name="Default Changelist" comment="Add README.md, move files">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterDir="false" />
+    <list default="true" id="ffe236cc-a21c-4d2d-a9b7-d0f9fc9c1f39" name="Default Changelist" comment="Use consistent filepath">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/movies/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/DataSource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/movies/PipeAndFilterRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/PipeAndFilterRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/movies/LinesToWordsFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/movies/LinesToWordsFilterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/movies/StemmerFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/movies/StemmerFilterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/movies/StopWordsFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/movies/StopWordsFilterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/movies/StopWordsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/StopWordsFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/movies/PipeAndFilterRunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/movies/PipeAndFilterRunnerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,46 +77,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LinesToWordsFilterTest">
-    <configuration name="All in pipe-and-filter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pipe-and-filter" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinesToWordsFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pipe-and-filter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="movies.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="movies" />
-      <option name="MAIN_CLASS_NAME" value="movies.LinesToWordsFilterTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinesToWordsFilterTest.canParseWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pipe-and-filter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="movies.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="movies" />
-      <option name="MAIN_CLASS_NAME" value="movies.LinesToWordsFilterTest" />
-      <option name="METHOD_NAME" value="canParseWords" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PipeAndFilterRunnerTest">
     <configuration name="PipeAndFilterRunnerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pipe-and-filter" />
       <extension name="coverage">
@@ -134,33 +88,41 @@
       </extension>
       <option name="PACKAGE_NAME" value="movies" />
       <option name="MAIN_CLASS_NAME" value="movies.PipeAndFilterRunnerTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StemmerFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pipe-and-filter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="movies.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="movies" />
-      <option name="MAIN_CLASS_NAME" value="movies.StemmerFilterTest" />
+    <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.Unnamed" />
+      <item itemvalue="JUnit.PipeAndFilterRunnerTest" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LinesToWordsFilterTest" />
         <item itemvalue="JUnit.PipeAndFilterRunnerTest" />
-        <item itemvalue="JUnit.All in pipe-and-filter" />
-        <item itemvalue="JUnit.StemmerFilterTest" />
-        <item itemvalue="JUnit.LinesToWordsFilterTest.canParseWords" />
       </list>
     </recent_temporary>
   </component>
@@ -294,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573159984826</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Add README.md, move files">
+      <created>1573228495667</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1573228495667</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
