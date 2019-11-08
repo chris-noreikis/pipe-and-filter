@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -18,7 +19,11 @@ public class StopWordsFilter implements PipeFilter {
     }
 
     public List<String> applyStopWords(List<String> input) throws IOException {
-        return input.stream().filter(e -> !this.stopWords.contains(e)).collect(Collectors.toList());
+        HashMap<String, Boolean> stopWordsMap = new HashMap<>();
+        this.stopWords.forEach(e -> {
+            stopWordsMap.put(e, true);
+        });
+        return input.stream().filter(e -> !stopWordsMap.containsKey(e)).collect(Collectors.toList());
     }
 
     @Override
