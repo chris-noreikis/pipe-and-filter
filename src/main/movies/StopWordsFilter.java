@@ -23,9 +23,7 @@ public class StopWordsFilter implements PipeFilter {
     @Override
     public List<String> run() throws IOException {
         List<String> input = this.previousFilter.run();
-        StopWatch.time(StopWordsFilter.class.toString());
         List<String> output = this.applyStopWords(input);
-        StopWatch.timeEnd(StopWordsFilter.class.toString());
         return output;
     }
 }
