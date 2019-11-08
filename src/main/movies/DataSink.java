@@ -45,15 +45,23 @@ public class DataSink implements PipeFilter {
         List<WordCount> wordsWithCount = this.getMostFrequentlyOccurringWordCount(input);
         wordsWithCount = this.sortAndPrune(wordsWithCount);
         StopWatch.timeEnd(DataSink.class.toString());
-        System.out.println();
-        String string = String.format("%35s %20s", "Word", "Count");
-        System.out.println(string);
-        System.out.println("------------------------------------------------------------");
 
+        printTableHeader();
+        printTableBody(wordsWithCount);
+    }
+
+    private void printTableBody(List<WordCount> wordsWithCount) {
         wordsWithCount.forEach(e -> {
             String string2 = String.format("%35s %20s", e.getWord(), e.getWordCount());
             System.out.println(string2);
         });
+    }
+
+    private void printTableHeader() {
+        System.out.println();
+        String string = String.format("%35s %20s", "Word", "Count");
+        System.out.println(string);
+        System.out.println("------------------------------------------------------------");
     }
 
     @Override
