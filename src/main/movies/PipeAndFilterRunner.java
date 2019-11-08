@@ -1,6 +1,8 @@
 package movies;
 
 import java.io.IOException;
+import java.nio.file.FileSystem;
+import java.nio.file.FileSystems;
 
 public class PipeAndFilterRunner {
     public void runEverything(String filePath) throws IOException {
@@ -11,5 +13,11 @@ public class PipeAndFilterRunner {
         PipeFilter outputPipeFilter = new DataSink(StemmerFilter);
 
         outputPipeFilter.run();
+    }
+
+    public static void main(String[] args) throws IOException {
+        String filename = args[0];
+        PipeAndFilterRunner runner = new PipeAndFilterRunner();
+        runner.runEverything(filename);
     }
 }
