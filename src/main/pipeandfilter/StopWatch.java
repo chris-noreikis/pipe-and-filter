@@ -14,7 +14,7 @@ public class StopWatch {
         if (labels.containsKey(label)) {
             Long endTime = System.currentTimeMillis();
             Long ellapsedMilliseconds =  endTime - startTime;
-            System.out.println(String.format("%35s | Milliseconds | %4s", label, ellapsedMilliseconds));
+            System.out.println(String.format("%45s | Milliseconds | %4s", label, ellapsedMilliseconds));
         }
     }
 

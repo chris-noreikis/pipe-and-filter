@@ -9,15 +9,16 @@ import java.util.stream.Collectors;
 
 public class StopWordsFilter implements PipeFilter {
     private PipeFilter previousFilter;
+    List<String> stopWords;
 
-    public StopWordsFilter(PipeFilter input) {
+    public StopWordsFilter(PipeFilter input) throws IOException {
         this.previousFilter = input;
+        Path path = FileSystems.getDefault().getPath("src/dist/stopwords.txt");
+        List<String> stopwords = Files.readAllLines(path);
     }
 
     public List<String> applyStopWords(List<String> input) throws IOException {
-        Path path = FileSystems.getDefault().getPath("src/dist/stopwords.txt");
-        List<String> stopwords = Files.readAllLines(path);
-        return input.stream().filter(e -> !stopwords.contains(e)).collect(Collectors.toList());
+        return input.stream().filter(e -> !this.stopWords.contains(e)).collect(Collectors.toList());
     }
 
     @Override

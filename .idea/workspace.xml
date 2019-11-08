@@ -4,8 +4,20 @@
     <list default="true" id="ffe236cc-a21c-4d2d-a9b7-d0f9fc9c1f39" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/DataSink.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/DataSink.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/DataSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/DataSource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/LinesToWordsFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/LinesToWordsFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/StemmerFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/StemmerFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/StopWordsFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/StopWordsFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/DataSink.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/DataSink.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/DataSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/DataSource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/LinesToWordsFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/LinesToWordsFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/StemmerFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/StemmerFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/StopWordsFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/StopWordsFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/textprocessing-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/textprocessing-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/pipeandfilter/PipeAndFilterRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/pipeandfilter/PipeAndFilterRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/pipeandfilter/StopWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/pipeandfilter/StopWatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/pipeandfilter/StopWordsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/pipeandfilter/StopWordsFilter.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -303,12 +315,51 @@
       <option name="project" value="LOCAL" />
       <updated>1573231334956</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Version the build directory">
+      <created>1573231527211</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1573231527211</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Revert &quot;Remove StopWatch calls for p1 submission&quot;&#10;&#10;This reverts commit 89a9c5f1">
+      <created>1573246961077</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1573246961077</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -317,6 +368,11 @@
           </value>
         </entry>
       </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
@@ -340,6 +396,8 @@
     <MESSAGE value="Remove StopWatch calls for p1 submission" />
     <MESSAGE value="Add alice in wonderland" />
     <MESSAGE value="Rename directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename directory" />
+    <MESSAGE value="Version the build directory" />
+    <MESSAGE value="Revert &quot;Remove StopWatch calls for p1 submission&quot;&#10;&#10;This reverts commit 89a9c5f1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;Remove StopWatch calls for p1 submission&quot;&#10;&#10;This reverts commit 89a9c5f1" />
   </component>
 </project>

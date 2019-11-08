@@ -10,7 +10,9 @@ public class PipeAndFilterRunner {
         PipeFilter StemmerFilter = new StemmerFilter(stopWordsPipeFilter);
         PipeFilter outputPipeFilter = new DataSink(StemmerFilter);
 
+        StopWatch.time("Total Pipeline");
         outputPipeFilter.run();
+        StopWatch.timeEnd("Total Pipeline");
     }
 
     public static void main(String[] args) throws IOException {
