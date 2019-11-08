@@ -1,4 +1,4 @@
-package movies;
+package pipeandfilter;
 
 class WordCount {
     private int wordCount;

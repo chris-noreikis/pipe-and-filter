@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffe236cc-a21c-4d2d-a9b7-d0f9fc9c1f39" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/textprocessing.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/textprocessing.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/textprocessing.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/movies/DataSink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/DataSink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/movies/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/DataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/movies/LinesToWordsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/LinesToWordsFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/movies/StemmerFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/StemmerFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/movies/StopWatch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/movies/StopWordsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/movies/StopWordsFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +80,7 @@
       <module name="pipe-and-filter" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="movies.*" />
+          <option name="PATTERN" value="pipeandfilter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -291,7 +282,21 @@
       <option name="project" value="LOCAL" />
       <updated>1573230719049</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Remove StopWatch calls for p1 submission">
+      <created>1573230869396</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1573230869396</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Add alice in wonderland">
+      <created>1573231080655</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1573231080655</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -325,6 +330,8 @@
     <MESSAGE value="Readme updates" />
     <MESSAGE value="Upgrade gradle version" />
     <MESSAGE value="Refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor" />
+    <MESSAGE value="Remove StopWatch calls for p1 submission" />
+    <MESSAGE value="Add alice in wonderland" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add alice in wonderland" />
   </component>
 </project>

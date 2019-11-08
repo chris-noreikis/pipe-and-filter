@@ -1,13 +1,10 @@
-package movies;
+package pipeandfilter;
 
 import java.io.IOException;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class DataSource implements PipeFilter {
     private String filepath;

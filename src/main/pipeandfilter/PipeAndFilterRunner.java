@@ -1,4 +1,4 @@
-package movies;
+package pipeandfilter;
 
 import java.io.IOException;
 

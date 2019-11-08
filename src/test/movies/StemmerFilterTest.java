@@ -1,4 +1,4 @@
-package movies;
+package pipeandfilter;
 import org.junit.Test;
 
 import java.io.IOException;
