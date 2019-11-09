@@ -5,7 +5,7 @@ import java.io.IOException;
 public class PipeAndFilterRunner {
     public void runEverything(String filePath) throws IOException {
         PipeFilter dataSource = new DataSource(filePath);
-        PipeFilter linesToWords = new LinesToWordsFilter(dataSource);
+        PipeFilter linesToWords = new LinesToTermsFilter(dataSource);
         PipeFilter stopWordsPipeFilter = new StopWordsFilter(linesToWords);
         PipeFilter StemmerFilter = new StemmerFilter(stopWordsPipeFilter);
         PipeFilter outputPipeFilter = new DataSink(StemmerFilter);

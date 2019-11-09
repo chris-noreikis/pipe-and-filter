@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ffe236cc-a21c-4d2d-a9b7-d0f9fc9c1f39" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/pipeandfilter/LinesToWordsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/pipeandfilter/LinesToWordsFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/pipeandfilter/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/pipeandfilter/DataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/pipeandfilter/LinesToWordsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/pipeandfilter/LinesToTermsFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/pipeandfilter/PipeAndFilterRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/pipeandfilter/PipeAndFilterRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/pipeandfilter/LinesToWordsFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/pipeandfilter/LinesToTermsFilterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/pipeandfilter/PipeAndFilterRunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/pipeandfilter/PipeAndFilterRunnerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -314,8 +318,25 @@
       <option name="project" value="LOCAL" />
       <updated>1573249113796</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Perf improvements for LinesToWords">
+      <created>1573311698438</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1573311698439</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -361,7 +382,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix tests" />
     <MESSAGE value="Remove unneeded tests" />
     <MESSAGE value="Create pipes instead of storing filter reference" />
     <MESSAGE value="Move pipe class into its own file" />
@@ -386,6 +406,7 @@
     <MESSAGE value="Fix renaming mixup" />
     <MESSAGE value="Implement better timing code" />
     <MESSAGE value="Use a hashmap for stopwrods for better timing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use a hashmap for stopwrods for better timing" />
+    <MESSAGE value="Perf improvements for LinesToWords" />
+    <option name="LAST_COMMIT_MESSAGE" value="Perf improvements for LinesToWords" />
   </component>
 </project>
