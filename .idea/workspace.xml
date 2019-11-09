@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffe236cc-a21c-4d2d-a9b7-d0f9fc9c1f39" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/pipeandfilter/StopWatchItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/DataSink.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/DataSink.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/PipeAndFilterRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/PipeAndFilterRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/Stemmer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/Stemmer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/StopWordsFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/pipeandfilter/StopWordsFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/DataSink.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/DataSink.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/PipeAndFilterRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/PipeAndFilterRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/Stemmer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/Stemmer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/StopWordsFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pipeandfilter/StopWordsFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/pipeandfilter/DataSink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/pipeandfilter/DataSink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/pipeandfilter/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/pipeandfilter/DataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/pipeandfilter/PipeAndFilterRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/pipeandfilter/PipeAndFilterRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/pipeandfilter/StopWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/pipeandfilter/StopWatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/pipeandfilter/StopWordsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/pipeandfilter/StopWordsFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/pipeandfilter/PipeAndFilterRunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/pipeandfilter/PipeAndFilterRunnerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/pipeandfilter/LinesToWordsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/pipeandfilter/LinesToWordsFilter.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -315,7 +300,21 @@
       <option name="project" value="LOCAL" />
       <updated>1573247367394</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Implement better timing code">
+      <created>1573248909072</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1573248909072</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Use a hashmap for stopwrods for better timing">
+      <created>1573249113796</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1573249113796</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -385,6 +384,8 @@
     <MESSAGE value="Version the build directory" />
     <MESSAGE value="Revert &quot;Remove StopWatch calls for p1 submission&quot;&#10;&#10;This reverts commit 89a9c5f1" />
     <MESSAGE value="Fix renaming mixup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix renaming mixup" />
+    <MESSAGE value="Implement better timing code" />
+    <MESSAGE value="Use a hashmap for stopwrods for better timing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use a hashmap for stopwrods for better timing" />
   </component>
 </project>
